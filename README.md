@@ -6,4 +6,5 @@ Blackjack (formerly Black Jack and Vingt-Un) is a casino banking game. It is the
 * Python
 
 #### MODULES USED: 
-* Random
+* Random &rarr; Choosing the random cards handed.
+* os &rarr; Clearing the console after a hand.
