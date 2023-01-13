@@ -1,5 +1,6 @@
 import random
 import os
+import art
 
 ############### Blackjack Project #####################
 
@@ -14,13 +15,6 @@ import os
 ## The cards in the list have equal probability of being drawn.
 ## Cards are not removed from the deck as they are drawn.
 ## The computer is the dealer.
-
-##################### Hints #####################
-
-#Hint 1: Go to this website and try out the Blackjack game: 
-#   https://games.washingtonpost.com/games/blackjack/
-#Then try out the completed Blackjack project here: 
-#   http://blackjack-final.appbrewery.repl.run
 
 cards = [11,2,3,4,5,6,7,8,9,10,10,10,10]
 blackjack = 21
@@ -85,6 +79,7 @@ def who_wins(player_final_hand, computer_final_hand):
 
 def continue_game():
     os.system('cls')
+    print(art.logo)
     player_hand = []
     computer_hand = []
     
@@ -120,8 +115,10 @@ def continue_game():
     else:
         return "Goodbye! See you soon!"
 
-
-continue_game()
+## MAIN PROGRAM
+while input("Do you want to play a game of blackjack? Type 'y' or 'n : '" ) == 'y':
+    os.system('cls')
+    continue_game()
 
 
 
